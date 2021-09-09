@@ -1,6 +1,6 @@
 # CS550_PageFaultTracking
 
-
+To check detailed description of this project, see HW.pdf.
 
 
 to run the program(in sudo mode):
