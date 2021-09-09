@@ -1,0 +1,7 @@
+for the network I/O intensive application, too many page faults happen intensively around the same range of virtual page number but seems not in the same time slice.the nodes keep aligned with each other in the X-axis direction.
+for the compute intensive application, very few page faults happens in the range of same memory page number slice. but still, not in the same time. considering the number of samples, it may occur randomly and accidentally.
+for the compute and I/O intensive application, the number of occurence of page fault is greater than purely compute app but less than network I/O. same as former, page faults tend to happen in the relatively lower part of virtual address(maybe because of some pattern of memory allocation).
+
+the occurence frequency of application: network I/O > compute and I/O > compute.
+it seems the page faults "prefer" lower part of memory addr.
+page faults rarely happen but if happen, they happen in a relatively limited virtual addr range. their popularity in memory addr seems far higher than that in time.  
